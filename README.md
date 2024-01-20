@@ -52,3 +52,5 @@
 | 1101 | neg | Negation | O | |
 | 1110 | jrs | Jump to Register| O | Branch to DR |
 | 1111 | jrs | Jump to Register and Save  | O | Save PC to VR and branch to DR|
+
+![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/0ca40e7d-f65c-4131-b0e6-5d695f9c704b)
