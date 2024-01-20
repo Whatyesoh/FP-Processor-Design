@@ -50,5 +50,5 @@
 | 1011 | add | Addition | O | Adds VR to R0|
 | 1100 | mult | Multiplication | O | Multiplies VR by R0 |
 | 1101 | neg | Negation | O | |
-| 1110 | jrs | Jump to Register| O | Branch to VR |
-| 1111 | jrs | Jump to Register and Save  | O | Save PC to DR and branch to VR|
+| 1110 | jrs | Jump to Register| O | Branch to DR |
+| 1111 | jrs | Jump to Register and Save  | O | Save PC to VR and branch to DR|
