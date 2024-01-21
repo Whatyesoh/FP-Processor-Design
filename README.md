@@ -53,5 +53,8 @@
 | 1110 | jrs | Jump to Register| O | Branch to DR |
 | 1111 | jrs | Jump to Register and Save  | O | Save PC to VR and branch to DR|
 
-![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/9cd57764-1377-41fa-8ab3-e6172bfd5410)
+![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/03c4c084-83e9-4173-9d25-7232124d29c7)
+
+![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/d77b499a-99ed-4c5b-b41b-43ddfbf920e0)
+
 
