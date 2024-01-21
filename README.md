@@ -53,8 +53,30 @@
 | 1110 | jrs | Jump to Register| O | Branch to DR |
 | 1111 | jrs | Jump to Register and Save  | O | Save PC to VR and branch to DR|
 
+### Diagrams showing a high level design of the processor datapath and control unit FSM
+
 ![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/03c4c084-83e9-4173-9d25-7232124d29c7)
 
 ![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/d77b499a-99ed-4c5b-b41b-43ddfbf920e0)
+
+### Reflection on design
+
+1. GPUs already excell at doing efficient floating point arithmetic; however, this works as a standalone and smaller scale computer.
+2. The int/floating point and signed/unsigned bits are wasteful
+   - They could each by replaced by an extra bit of opcode which would quadruple the number of instructions I can use. This would still let me have signed/unsigned or int/floating point distinctions for the instructions that need it while leaving a lot of extra room for more instructions. I just went with the much less complex option of just having less instructions, though.
+3. Restricted to operating on R0
+   - The restriction on having to use R0 for a lot of instructions will have an impact on performance as it will take more instructions to execute simple operations. However, I chose to use this approach as it provides the user with many more registers. With my 16 bit architecture, I give the user the same amount of registers as MIPS does with a 32 bit architecture. This isn't a total loss in performance, though, as having more registers means the user doesn't have to rely nearly as much on loads and stores which take a large amount of time. Testing would be required to determine which of these options yield a better performance, but for now, I decided that I prefer having more registers.
+4. Datapath/control unit complexity
+   - I tried making the datapath less complex and as a result the control unit needs to be more complex to accomodate it. This decision just came down to how much effort it took to make either diagram. The datapath was getting crowded, so I decided to put more logic in the control unit.
+
+### Future work
+
+1. Simulating the processor
+   - My next step will be to simulate the processor using a hardware description language such as verilog so I can test my design. I can't actually test if diagrams are accurate yet, I just had to manually check each instruction to see if they worked.
+2. Making improvements to the design
+   - I would definitely like to add more instructions as mentioned in part 2 of my reflection to improve the performance of my processor. I would also like to make any more design changes that I could think of once I can test and use the processor.
+3. Test performance
+   - Once I have a working simulation, I could test the performance of my processor and compare it to other processors. I would mostly try to compare the performance relative to other 16 bit processors or to other processors' ability to perform floating point arithmetic. This could give me a good idea of how well my processor performs already and seeing how other processors perform could give me some inspiration on new improvements to add.
+ 
 
 
