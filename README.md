@@ -37,7 +37,7 @@
 | Opcode | Instruction | Function | Format | Special Notes |
 | --- | --- | --- | --- | --- |
 | 0000 | li | Load Immediate | I | |
-| 0001 | addi | Add Immediate | I | Always signed |
+| 0001 | addi | Add Immediate | I | Adds immediate to R0 and stores in R0 |
 | 0010 | beq | Branch if Equal | O | Branch to DR if VR equals R0|
 | 0011 | blt | Branch if Less Than | O | Branch to DR if VR is less than R0 |
 | 0100 | bnq | Branch if not Equal | O | Branch to DR if VR doesn't equal R0|
