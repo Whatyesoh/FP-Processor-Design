@@ -63,7 +63,7 @@
 
 1. GPUs already excell at doing efficient floating point arithmetic; however, this works as a standalone and smaller scale computer.
 2. The int/floating point and signed/unsigned bits are wasteful
-   - They could each by replaced by an extra bit of opcode which would quadruple the number of instructions I can use. This would still let me have signed/unsigned or int/floating point distinctions for the instructions that need it while leaving a lot of extra room for more instructions. I just went with the much less complex option of just having less instructions, though.
+   - They could each be replaced by an extra bit of opcode which would quadruple the number of instructions I can use. This would still let me have signed/unsigned or int/floating point distinctions for the instructions that need it while leaving a lot of extra room for more instructions. I just went with the much less complex option of just having less instructions, though.
 3. Restricted to operating on R0
    - The restriction on having to use R0 for a lot of instructions will have an impact on performance as it will take more instructions to execute simple operations. However, I chose to use this approach as it provides the user with many more registers. With my 16 bit architecture, I give the user the same amount of registers as MIPS does with a 32 bit architecture. This isn't a total loss in performance, though, as having more registers means the user doesn't have to rely nearly as much on loads and stores which take a large amount of time. Testing would be required to determine which of these options yield a better performance, but for now, I decided that I prefer having more registers.
 4. Datapath/control unit complexity
