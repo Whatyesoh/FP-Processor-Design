@@ -55,7 +55,7 @@
 
 ### Diagrams showing a high level design of the processor datapath and control unit FSM
 
-![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/03c4c084-83e9-4173-9d25-7232124d29c7)
+![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/07716268-53ac-41da-be97-5a4261a74f5c)
 
 ![image](https://github.com/Whatyesoh/FP-Processor-Design/assets/43829957/d77b499a-99ed-4c5b-b41b-43ddfbf920e0)
 
