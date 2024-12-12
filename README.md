@@ -20,7 +20,7 @@
 ### Based on these design decisions, I came up with an instruction set that uses two different formats:
 
 1. "I" Format:
-   - This format is for using immediates. The processor knows to use this format if the first four bits of the opcode are 0.
+   - This format is for using immediates. The processor knows to use this format if the first three bits of the opcode are 0.
    - ``[####------------]``: Opcode
    - ``[----#-----------]``: Integer or floating point
    - ``[-----###########]``: Immediate
